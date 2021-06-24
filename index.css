@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', Ubuntu;
+}
+
+.outer-wrapper{
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.outer-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 470vw;
+    height: 100vh;
+
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+
+    background-image: url(./assets/images/background-main.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+@media only screen and (max-width: 991px){
+    .slide{
+        background-size: cover;
+    }
+}
