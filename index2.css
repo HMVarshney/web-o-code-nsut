@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", Ubuntu;
+}
+
+.outer-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+.outer-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.main-container {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-image: url(./assets/images/background-main.jpg); */
+}
+
+.bg-image {
+  height: 100%;
+  /* visibility: hidden; */
+}
+
+.center-div {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 168%;
+  /* visibility: visible; */
+}
+
+.heading {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bolder;
+  color: white;
+  font-size: 200px;
+  letter-spacing: 10;
+  height: max-content;
+  width: max-content !important;
+}
+
+.left {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  /* visibility: visible; */
+}
+
+.right {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: calc(7000px - 100vw);
+  /* visibility: visible; */
+}
+.overlay {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0.24) 54.17%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.lights {
+  height: 23%;
+  position: absolute;
+  right: 100px;
+}
+
+.navbar {
+  height: max-content;
+  color: #bfbfbf;
+  width: 75% !important;
+  margin-top: 150px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .slide {
+    background-size: cover;
+  }
+}
