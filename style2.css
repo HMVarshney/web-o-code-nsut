@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 78, 78);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', serif !important;
+    scrollbar-width: thin;
+}
+
+.main-image-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.main-image-div{
+    background-image: url(assets/images/living-room-2155376_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    animation-name: fadeInUp;
+    animation-duration: 600ms;
+}
+
+/* .main-image-div:hover .tooltip-box{
+    display: block;
+} */
+
+.info-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #1d1d1d;
+    /* background-color: #161013; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-heading{
+    font-size: 175px;
+    color: rgb(214, 214, 214);
+    font-family: 'Algerya', serif;
+
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+.info-text h1{
+    transition: all ease-in-out 300ms;
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+}
+
+.info-text h1:hover{
+    color: rgb(214, 214, 214);
+}
+
+.info-button{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 7px 0;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.822);
+    transition: all ease-in-out 300ms;
+
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+.info-button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+#info-button-collection{
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;   
+}
+
+.float-right-button{
+    position: absolute;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 8px rgb(122, 122, 122));
+}
+
+.button-1{
+    top: 40px;
+}
+
+.button-2{
+    top: 120px;
+}
+
+
+.slider-container{
+    margin-top: 4em;
+}
+
+.slider-heading{
+    padding: 10px 0;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 500px){
+    .info-container{
+        height: 20vh;
+    }
+}
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .main-image-container{
+        height: 40vh
+    }
+
+    .info-heading{
+        font-size: 100px;
+        color:#2f2f2f;
+    }
+
+    .info-container{
+        height: 20vh;
+        background-color: white;
+    }
+
+    .info-button{
+        font-size: 25px;
+        background-color: #2f2f2f;
+        color: white;
+    }
+
+    .info-text h1{
+        color: #2f2f2f;
+    }
+}
+
+@keyframes blink{
+    0%{
+        transform: scale(1);
+    }
+
+    10%{
+        transform: scale(1.05);
+        background-color: tomato;
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,30 @@
+.product-grid-modal{
+    display: none;
+
+    animation: fadeIn 1s;
+    transition: all ease-out 300ms;
+}
+
+.all-product-modal-wrapper{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.308);
+
+    display: flex;
+    align-items: center;
+}
+
+.all-product-modal-container{
+    overflow-y: scroll;
+    max-height: 90%;
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+}
+
+.modal-close-button{
+    position: sticky;
+    top: 0;
+}

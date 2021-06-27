@@ -1,0 +1,30 @@
+.carousel{
+    display: flex;
+    align-items: flex-end;
+    max-width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel .carousel-slide{
+    padding: 10px;
+}
+
+.carousel .carousel-slide img{
+    border-radius: 10px;
+    height: 400px;
+    filter: drop-shadow(2px 2px 10px rgba(121, 121, 121, 0.377))
+}
+
+.carousel-arrow-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    outline: none;
+    background-color: white;
+}
