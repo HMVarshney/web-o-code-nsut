@@ -61,6 +61,7 @@ body {
 
 .bg-image {
   height: 100%;
+  width: 7102px;
   /* visibility: hidden; */
 }
 
@@ -291,7 +292,7 @@ body {
   width: 72px;
   height: 72px;
   /* left: 23%; */
-  left: 13%;
+  left: 4570px;
   border-radius: 50%;
 }
 
@@ -306,7 +307,7 @@ body {
   width: 103px;
   height: 167px;
   /* left: 31%; */
-  left: 22%;
+  left: 4700px;
   border-radius: 50%;
 }
 
@@ -320,6 +321,7 @@ body {
   bottom: 16%;
   width: 360px;
   height: 123px;
+  left: 4964px;
   /* right: 31%; */
   /* right: 40%; */
   border-radius: 50%;
@@ -335,7 +337,7 @@ body {
   bottom: 14%;
   width: 154px;
   height: 192px;
-  right: 30%;
+  left: 6500px;
   border-radius: 50%;
 }
 
@@ -349,7 +351,7 @@ body {
   bottom: 10%;
   width: 554px;
   height: 242px;
-  left: 10%;
+  left: 5700px;
   border-radius: 50%;
 }
 
@@ -363,7 +365,7 @@ body {
   top: 36%;
   width: 66px;
   height: 110px;
-  left: 22.7%;
+  left: 5880px;
   border-radius: 50%;
 }
 
